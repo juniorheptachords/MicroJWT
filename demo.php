@@ -1,9 +1,4 @@
-# MicroJWT (μJWT)
-A very basic Json Web Token (JWT) implementation that handles the expiration registered claim "exp".
-
-## How to use
-
-```php
+<?php
 include("MicroJWT.php");
 
 $microJwt = new MicroJWT("adamngoodsecret", "HS256");
@@ -20,4 +15,3 @@ $decoded = $microJwt->decode($token);
 
 var_dump($decoded);
 echo'<br/>';
-```
